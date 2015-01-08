@@ -1,0 +1,60 @@
+program supermarche;
+uses crt;
+label 1;
+const N=3;
+type articles= record
+                 CODE:integer;
+                 march: string;
+                 p_unit: integer
+                 end;
+  tab=ARRAY[1..N] OF articles;
+  var  t:tab;i:integer;
+  function rech(var trouve:boolean)
+  begin
+  i:=1; trouve:='faux';
+  while t[i]<>a and i<=N do
+  begin
+  i:i+1;
+  end;
+  if t[i]=a then
+  begin
+  trouve:='vrai';
+  pos:=i;
+  writeln('combien de ',t[i].march,' voulez-vous');
+  end
+  else
+  writeln('vous  avez entr‚ un code erron‚');
+  goto 1;
+  end;
+
+begin
+       for i:=1 to N   do
+       begin
+       t[i].code:=i;
+       end;
+       i:=1;
+       t[i].march:='lait';
+       i:=i+1;
+       t[i].march:='pain';
+       i:=i+1;
+       t[i].march:='oeufs';
+       i:=1;
+       t[i].p_unit:=450;
+       i:=i+1;
+       t[i].p_unit:=125;
+       i:=i+1;
+       t[i].p_unit:=75;
+write('code');
+write('marchandises':15);
+writeln('prix_unitaire':25);
+for i:=1 to N do
+begin
+write(t[i].code);
+write(t[i].march:15);
+writeln(t[i].p_unit:25);
+end;
+1: writeln('entrez le code de la marchandise que vous voulez');
+readln(a);
+rech(a);
+readln;
+end.
