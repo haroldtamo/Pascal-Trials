@@ -1,0 +1,24 @@
+uses crt,graph;
+var pilote,mode,i,j:integer;
+begin
+pilote:=detect; i:=101;j:=50;
+initgraph(pilote,mode,' ');
+bar(100,50,500,450);
+setcolor(black);
+outtextxy(i,j+1,'MOKEM MOKEM TAMO          yaound‚,le 15 Avril 2011');
+outtextxy(i,J+9,'Harold');
+outtextxy(i,j+18,'Tel: 78 12 40 85');
+outtextxy(i+120,j+70,'A monsieur le representant r‚sident');
+outtextxy(i+160,j+80,'      de l''IAI-Cameroun ');
+outtextxy(i,j+140,'Objet: demande de d‚molition');
+outtextxy(i+160,j+190,'Monsieur,');
+outtextxy(i+30,j+210,'je viens par la pr‚sente auprŠs de votre haute');
+outtextxy(i+30,J+230,'bienveillance solliciter de votre part un peu ');
+outtextxy(i+30,j+250,' de s‚rieux et de reflexion car votre ‚cole');
+outtextxy(i+30,j+270,'manque cruellement de professionnalisme.En effet');
+outtextxy(i+30,j+290,'elle ne forme que des bureaucrates point barre');
+outtextxy(i+30,j+310,'Ainsi,pour y rem‚dier, pardon d‚missionnez.Bye');
+outtextxy(i+230,j+360,'L''‚tudiant fach‚');
+readln;
+closegraph;
+end.

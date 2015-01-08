@@ -1,0 +1,5 @@
+program Dstage;
+uses HARRYBOY;
+begin
+demandstage;
+end.

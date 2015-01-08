@@ -1,0 +1,16 @@
+program premiers;
+uses crt;
+var
+begin
+writeln('entrez le nombre a d‚composer');
+repeat
+readln(a);
+until (a>0);
+testeur:=sqrt(a);
+while i<=testeur then
+begin
+q:=a div i;
+r:=a mod i;
+if r<>0 then i:=i+1;
+if r=0 then
+if t[i] =t[i] then t[i]:=t
